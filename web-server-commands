@@ -46,7 +46,7 @@ sudo mv nginx.conf nginx-backup.conf
 
 # !!! IMP !!!
 # MODIFY BELOW CODE WITH YOUR S3 BUCKET NAME
-sudo aws s3 cp s3://<YOUR-S3-BUCKET-NAME>/application-code/nginx.conf . 
+sudo aws s3 cp s3://aws-infra-tier3-project/application-code/nginx.conf . 
 sudo chmod -R 755 /home/ec2-user
 sudo service nginx restart
 sudo chkconfig nginx on
